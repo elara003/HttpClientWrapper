@@ -1,7 +1,7 @@
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace HttpClientWrapper.Contracts
+namespace HttpClientWrapper.Src.Contracts
 {
     public interface IHttpClient
     {
