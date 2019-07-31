@@ -1,7 +1,7 @@
-using HttpClientWrapper.Src.Contracts;
 using NUnit.Framework;
+using HttpClientWrapper.Contracts;
 
-namespace HttpClientWrapper.Tests
+namespace HttpClientWrapperTests
 {
     [TestFixture]
     public class HttpClientWrapperTests
@@ -9,7 +9,7 @@ namespace HttpClientWrapper.Tests
         [Test]
         public void CallsGooglesWebsite()
         {
-            IHttpClient client = new HttpClientWrapper.Src.Wrappers.HttpClientWrapper();
+            IHttpClient client = new HttpClientWrapper.Wrappers.HttpClientWrapper();
             var response = client.GetStringAsync("https://www.google.com").Result;
             Assert.IsTrue(response.Contains("google"));
         }

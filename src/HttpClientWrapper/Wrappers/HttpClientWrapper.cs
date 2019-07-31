@@ -1,8 +1,8 @@
-﻿using HttpClientWrapper.Src.Contracts;
+﻿using HttpClientWrapper.Contracts;
 using System;
 using System.Net.Http;
 
-namespace HttpClientWrapper.Src.Wrappers
+namespace HttpClientWrapper.Wrappers
 {
     public class HttpClientWrapper : HttpClient, IHttpClient
     {
