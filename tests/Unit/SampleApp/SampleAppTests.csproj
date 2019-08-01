@@ -11,6 +11,6 @@
     <PackageReference Include="FluentAssertions" Version="5.7.0"/>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\SampleApp\SampleApp.csproj"/>
+    <ProjectReference Include="..\..\..\src\SampleApp\SampleApp.csproj"/>
   </ItemGroup>
 </Project>
