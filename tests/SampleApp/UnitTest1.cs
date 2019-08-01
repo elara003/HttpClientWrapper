@@ -22,7 +22,7 @@ namespace Tests.SampleApp
         }
 
         [Test]
-        public void Test1()
+        public void GetGoogleSearchPage_ReturnsTheResponseFrom_Google()
         {
             var response = _sut.GetGoogleSearchPage();
             response.Should().Be(_response);
